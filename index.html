@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Um Convite Especial 💌</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="app.js" defer></script>
+</head>
+<body>
+
+<div class="hearts-bg" id="heartsBg"></div>
+<canvas id="confetti-canvas"></canvas>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="yesModal">
+  <div class="modal-box">
+    <span class="big-emoji">🥳</span>
+    <h2>Eba!!</h2>
+    <p>Sabia que você não ia resistir! <br>vai ser legal pô — por esse pedido voce não esperava né kkkkkkkkkkk</p>
+    <button class="modal-close" onclick="closeModal()">blzzz💕</button>
+  </div>
+</div>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="envelope">💌</div>
+    <p class="hero-tag">Uma mensagem especial para você</p>
+    <h1>eu tenho um <span>convite</span><br>para você</h1>
+    <p class="hero-sub">
+      Eu poderia fingir que isso é só uma mensagem qualquer…<br>
+      mas a verdade é que eu quero muito sair com você. 🌸
+    </p>
+    <div class="scroll-cta">
+      <span>Rola pra baixo</span>
+      <span class="arrow">↓</span>
+    </div>
+  </section>
+
+  <!-- ELOGIOS -->
+  <section class="section">
+    <p class="section-label reveal">Antes de qualquer coisa…</p>
+    <h2 class="section-title reveal">Algumas coisas que eu acho de você 🤭</h2>
+    <div class="compliments-grid">
+      <div class="compliment-card reveal">
+        <span class="emoji">🧠</span>
+        <h3>Inteligente demais</h3>
+        <p>Dá pra perceber que tem muito pensamento por trás desse sorriso. E isso é ridiculamente fascinante.</p>
+      </div>
+      <div class="compliment-card reveal">
+        <span class="emoji">🌺</span>
+        <h3>Sua vibe é única</h3>
+        <p>Não existe outra igual. Você tem um jeito de ser que prende atenção sem nem tentar.</p>
+      </div>
+      <div class="compliment-card reveal">
+        <span class="emoji">💫</span>
+        <h3>Você inspira</h3>
+        <p>Só de te ver sendo você mesma já dá vontade de ser uma versão melhor de mim mesmo. Isso é um poder e tanto.</p>
+      </div>
+      <div class="compliment-card reveal">
+        <span class="emoji">🍰</span>
+        <h3>Doce e autêntica</h3>
+        <p>Do jeitinho certo — sem exagero. Aquele equilíbrio raro que poucas pessoas conseguem ter.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider">· · · 💖 · · ·</div>
+
+  <!-- MOTIVOS -->
+  <section class="section">
+    <p class="section-label reveal">Agora os motivos oficiais</p>
+    <h2 class="section-title reveal">Por que você DEVERIA sair comigo? 🤔</h2>
+    <div class="reasons-grid">
+      <div class="reason-card reveal">
+        <span class="reason-emoji">🍕</span>
+        <h3>A gente vai comer!</h3>
+        <p>E comer bem!. Prometo escolher um lugar que você vai adorar.</p>
+      </div>
+      <div class="reason-card reveal">
+        <span class="reason-emoji">😂</span>
+        <h3>Vai ser muito divertido</h3>
+        <p>Eu me esforço pra ser engraçado. Às vezes funciona. Às vezes não. Mas nunca é chato!</p>
+      </div>
+      <div class="reason-card reveal">
+        <span class="reason-emoji">🌟</span>
+        <h3>Você vai gostar</h3>
+        <p>Não é arrogância, é fé! Tenho certeza que no final você vai dizer que valeu a pena.</p>
+      </div>
+      <div class="reason-card reveal">
+        <span class="reason-emoji">☕</span>
+        <h3>Jogar conversa fora</h3>
+        <p>Atenção total, papo bom e zuerira</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="cta-section">
+    <h2>Então… o que você acha? 👀</h2>
+    <p>Uma resposta positiva é tudo que eu preciso pra fazer o meu dia (e talvez a semana inteira) 💌</p>
+    <div class="btn-group">
+      <button class="btn-yes" onclick="handleYes()">💕 Sim, eu topo!</button>
+      <button class="btn-no" id="btnNo" onmouseover="runAway(this)" onclick="noClick()">🙈 Não sei não…</button>
+    </div>
+  </section>
+
+</main>
+
+<footer>feito com muito carinho (e um pouquinho de nervoso) 💌</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
